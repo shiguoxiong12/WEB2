@@ -256,7 +256,7 @@ header.down .nav-tel{font-size:20px;}
 .service-list li .top{border:1px solid #DFDFDF;padding:135px 0 25px 0; background-color:rgba(255,255,255,.39);background-repeat:no-repeat;background-position:center 38px;font-size:15px;color:#333}
 
 .service-list li:hover .top{background-color:rgba(255,255,255,.8);transition:all .8s;}
- 
+
 .service-list li .intro{font-size:13px;color:#fff;background:#019F84;padding:15px 10px;position:relative;overflow:hidden;}
 .service-list li .intro p{position:relative;z-index:3;}
 .service-list li .intro b{font-size:4.35em;color:#01A689;position:absolute;left:20px;top:6px;z-index:2;transition:all .8s;}
@@ -281,7 +281,8 @@ header.down .nav-tel{font-size:20px;}
 .rbslider-item-list li:hover .img-box .cover{top:0;}
 .rbslider-item-list li .intro .cover{background:#1FB198;top:100%;z-index:2;}
 .rbslider-item-list li:hover .intro .cover{top:0;}
-.rbslider-item-list li:hover .intro,.rbslider-item-list li:hover .intro h3{color:#fff;transition:color .5s;}
+.rbslider-item-list li:hover .intro .cover {z-index:-1}
+.rbslider-item-list li:hover .intro,.rbslider-item-list li:hover .intro h3{color:#fff;z-index:99999;transition:color .5s;}
 .partner-list{width:88%;text-align:center;margin:auto;}
 .partner-list li{float:left;width:20%;box-sizing:border-box;min-height:80px;border:1px dotted #ccc;border-left:none;border-top:none;-webkit-transition: all .8s ease-in-out 0s;-moz-transition: all .6s ease-in-out 0s;transition: all .6s ease-in-out 0s;position:relative;text-align:center;}
 
