@@ -900,6 +900,11 @@
         })
         $(".movedown").click(function(){mySwiper.slideNext();})
         window.onload=function(){
+        	 if($(this).width()<700){
+        	 	phone=true
+        	 }else{
+        	 	phone=false
+        	 }
             heng=setInterval(function () {
                 playCard()
             }, 2000)
