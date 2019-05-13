@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sceenQuery.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <title>冠捷调查</title>
+    <style type="text/css">
+    .rbslider-pagination{
+      position: absolute;
+      bottom: 50px;
+      width: 100%;
+      text-align: center
+}
+.swiper-pagination-bullet{background: rgba(2,215,178,.66);opacity: 1;}
+.swiper-pagination-bullet-active{background: rgba(255,255,255,.66);}
+.rbslider-pagination-bullet{
+    display: inline-block;
+    width: 4%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%/50%;
+    margin-right: 8px;
+    line-height: 8px;
+}
+.rbslider-pagination-bullet.active{
+    background: #00dfb8;
+}
+.swiper-pagination{
+            display: none;
+        }
+        #intro {
+            padding: 0;
+            margin: 0;
+            height: 0 !important;
+            width: 0;
+            overflow: hidden !important;
+        }
+        body{background: #000000;}
+        #intro .logo {
+            float: left;
+            margin: 0 10px 10px 0;
+        }
+       
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        li {
+            font-family: microsoft yahei;
+        }
+
+        @media screen and (min-width:600px) {
+          
+            .slide1 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1441951809.jpg);
+            }
+            .slide2 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1441949934.jpg);
+            }
+            .slide3 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1441956136.jpg);
+            }
+            .slide4 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1441947138.jpg);
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .slide1 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443615946.jpg);
+            }
+            .slide2 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443618672.jpg);
+            }
+            .slide3 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443618099.jpg);
+            }
+            .slide4 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443619355.jpg);
+            }
+        }
+        @media screen and (max-width:800px) {
+            .swiper-pagination{
+               display: block;
+           }
+        }
+       
+        @media screen and (min-width:600px) {
+            .page2 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1441949348.jpg);
+            }
+            .page3 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1441956805.jpg);
+            }
+            .page4 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443609696.jpg);
+            }
+            .page5 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443614947.jpg);
+            }
+            .page6 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443608806.jpg);
+            }
+            .page7 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443610575.jpg);
+            }
+            .page8 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443608078.jpg);
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .page2 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443621700.jpg);
+            }
+            .page3 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443621784.jpg);
+            }
+            .page4 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443620091.jpg);
+            }
+            .page5 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443623011.jpg);
+            }
+            .page6 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443620778.jpg);
+            }
+            .page7 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443619787.jpg);
+            }
+            .page8 {
+                background-image: url(http://gz.dazhizhiqiye.com/img/1443617380.jpg);
+            }
+        }
+      
+        @media screen and (min-width:1050px) {
+            #index_x {
+                display: none
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="down">
+        <div class="container clearfix">
+            <h1 id="logo">
+                <a href="index.html">
+                    <img alt="logo图片" src="http://gz.dazhizhiqiye.com/img/1530802196.png">
+                </a>
+            </h1>
+            <nav>
+                <a class="icon_menu" id="index_xs">
+                    <img src="http://gz.dazhizhiqiye.com/img/caidan.png">
+                </a>
+                <ul id="menu">
+                    <li data-menuanchor="page1" class="active">
+                        <a data-name="home" class="cur">
+                            <span>首页</span>
+                        </a>
+                    </li>
+                    <li data-menuanchor="page2">
+                        <a>
+                            <span>服务项目</span>
+                        </a>
+                    </li>
+                    <li data-menuanchor="page3">
+                        <a>
+                            <span>资质</span>
+                        </a>
+                    </li>
+                    <li data-menuanchor="page4">
+                        <a>
+                            <span>流程</span>
+                        </a>
+                    </li>
+                    <li data-menuanchor="page5">
+                        <a>
+                            <span>承诺</span>
+                        </a>
+                    </li>
+                    <li data-menuanchor="page6">
+                        <a href="#page6">
+                            <span>责任</span>
+                        </a>
+                    </li>
+                    <li data-menuanchor="page7">
+                        <a href="#page7">
+                            <span>关于</span>
+                        </a>
+                    </li>
+                    <li data-menuanchor="page8">
+                        <a href="#page8">
+                            <span>联系</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news/news.html">
+                            <span>委托必读</span>
+                        </a>
+                    </li>
+                    <span style=" width:100%;float:right;z-index:999;background: rgba(0,0,0,.66);" id="index_x">
+                        <img src="http://gz.dazhizhiqiye.com/img/close.png" style="padding-right:15px; float:right; margin-top:10px">
+                    </span>
+                </ul>
+            </nav>
+            <a href="tel:13533332443" class="nav-tel">
+                <b></b>13533332443</a>
+        </div>
+    </header>
+    <div class="page-container swiper-container swiper-container-initialized swiper-container-vertical">
+        <div class="swiper-wrapper">
+            <section class="page page1 section swiper-slide" data-hash="page1"  id="page1">
+                <div class="swiper-container2" style="position: relative;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide rbslider-slide slide1 banner1">
+                            <div class="slide-content slide-content-1">
+                                <h2 class="ani" swiper-animate-effect="fadeInDown">律师团队 + 取证团队
+                                    <b>具有律师调查团队的我们 更 专 业</b>
+                                </h2>
+                                <p class="intro ani " swiper-animate-effect="slideInUp">你的事情交给我们，我们了解事实主因, 然后进行深度咨询与分析 分类哪些需要调查团队取证哪些可以直接诉讼 十多年丰富案件经验，因此懂得如何协助委托人击退困难、顺利挽回损失， 我们为你的困难事情的处理保驾护航！委托我们
+                                    困难已经解决一半
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide banner2" style="height: 300px;">
+                            <div class="slide-content slide-content-2">
+                                <h2 class="ani" swiper-animate-effect="slideInLeft">受人之托 忠人之事</h2>
+                                <h3></h3>
+                                <p class="intro ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="2s">
+                                    服务创造价值、智慧提升效率、诚信服务为本、客户满意至上， 3 6 5 天 × 2 4 小时全天候、全方位、无隙提供中国境内企业与个人咨询、调查取证服务及援助。 服 务 热 线：13533332443
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide banner3" style="height: 300px;">
+                            <div class="slide-content slide-content-3 banner1-content">
+                                <div class="content-box ani" swiper-animate-effect="slideInLeft fadeOutLeft" swiper-animate-delay="1.5s">
+                                    <h2>猜测 . 忍耐 . 怀疑 可能会使你误入歧途 只有调查取证才是解决问题的根本
+                                        <b>24小时免费服务热线13533332443</b>
+                                    </h2>
+                                    <p class="intro" style="text-align: right">
+                                        <br>在鲜为人知的岗位上 我们会倾尽全力将 事实 呈现给您，没有证据 就没有强有力的发言权
+                                    </p>
+                                </div>
+                                <div class="background-box ani" swiper-animate-effect="slideInLeft"></div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide banner4" style="height:300px">
+                            <div class="slide-content  slide-content-4 banner1-content">
+                                <h2 class="ani"     swiper-animate-effect="slideInRight">rights and interests</h2> 
+                                <h3 class="ani"     swiper-animate-effect="slideInLeft">捍卫你的权利，保障你的利益</h3>
+                                <p class="intro ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="3s">我们的宗旨: 守秘、严谨、客观、高效！</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination2" id="bannerBot"></div>
+                    <div class="home-news">
+                        <span>NEWS:</span>
+                        <ul>
+                            <li>
+                                <a href="newsshow94e2.html">委托调查前必读3</a>
+                            </li>
+                            <li>
+                                <a href="newsshowc465.html">假侦探辨别</a>
+                            </li>
+                            <li>
+                                <a href="newsshowec24.html">委托调查前必读2</a>
+                            </li>
+                            <li>
+                                <a href="newsshowde87.html">如何判别专业调查公司</a>
+                            </li>
+                            <li>
+                                <a href="newsshow4850.html">如何识别真假调查公司？</a>
+                            </li>
+                        </ul>
+                        <a class="more" herf="./case/case.html">more</a>
+                    </div>
+                    <a class="movedown"></a>
+                </div>
+            </section>
+            <section class="page page2 section swiper-slide" data-hash="page2"  id="page2">
+                <div class="fp-tableCell" style="height: 388px;">
+                    <div class="section-content-container">
+                        <hgroup class="ani" swiper-animate-effect="slideInRight">
+                            <h2>WHAT CAN WE DO ?</h2>
+                            <h3>我们的服务项目</h3>
+                        </hgroup>
+                        <ul class="section-content service-list ani" swiper-animate-effect="slideInLeft">
+                            <li>
+                                <div class="top brand">
+                                    <h3>律师起诉</h3>
+                                    <p></p>
+                                </div>
+                                <div class="intro">
+                                    <p>为你的案件代理诉讼或非诉协商协调，让你的损失降到最低，我们的律师团队有各类专业领域案件资深律师尤其是经济类 拆迁类 商业类</p>
+                                </div>
+                            </li>
+                            <style>
+                                .brand {
+                                    background-image: url(http://gz.dazhizhiqiye.com/img/1441948312.png);
+                                }
+                            </style>
+
+                            <li>
+                                <div class="top weixin">
+                                    <h3>民事取证</h3>
+                                    <p></p>
+                                </div>
+                                <div class="intro">
+                                    <p>为个人提供民事方面取证工作，请客观描述事情的整个经过，提供真实线索 为你的婚姻和家庭保驾护航 因为我们是专业的</p>
+                                </div>
+                            </li>
+                            <style>
+                                .weixin {
+                                    background-image: url(http://gz.dazhizhiqiye.com/img/1441951855.png);
+                                }
+                            </style>
+                            <li>
+                                <div class="top shop">
+                                    <h3>商业取证</h3>
+                                    <p></p>
+                                </div>
+                                <div class="intro">
+                                    <p>为公司或团体提供商业类取证，竞争对手数据，商业打假，商业串货，商业犯罪</p>
+                                </div>
+                            </li>
+                            <style>
+                                .shop {
+                                    background-image: url(http://gz.dazhizhiqiye.com/img/1441953225.png);
+                                }
+                            </style>
+                            <li>
+                                <div class="top app">
+                                    <h3>劝退策划师 （私人订制）</h3>
+                                    <p></p>
+                                </div>
+                                <div class="intro">
+                                    <p>为个人或团体达到目的目标而私人订制策划场景，专业劝退小三，专业策划场景</p>
+                                </div>
+                            </li>
+                            <style>
+                                .app {
+                                    background-image: url(http://gz.dazhizhiqiye.com/img/1441950521.png);
+                                }
+                            </style>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="page page3 section swiper-slide" data-hash="page3"  id="page3">
+                <div class="fp-tableCell" style="height: 425px;">
+                    <div class="section-content-container rbslider-item-list-container">
+                        <hgroup class="ani" swiper-animate-effect="slideInRight">
+                            <h2>经过十年的发展及实践总结，提炼出应对各类案件的内在规律。总结得出一套具有专业性、可行性，独特性行之有效的取证公式。</h2>
+                            <h3>冠杰私家侦探有十年的取证经验，经历过近千案件取证的基础上，总结提炼出了应对各类案件的内在规律。在案件的受理，执行过程中，提供准确、稳妥的行动策略。</h3>
+                        </hgroup>
+                        <div class="section-content rbslider-item-list-wrapper case-list ani" swiper-animate-effect="slideInUp">
+                            <ul class="rbslider-item-list clearfix">
+                                <li>
+                                    <a href="case/show3f1f.html">
+                                        <div class="img-box">
+                                            <div class="img">
+                                                <img src="http://www.yzwq007.com.img.800cdn.com/uploads/image/20190110/1547113361.png"
+                                                    alt="律师诉讼">
+                                            </div>
+                                            <div class="ck"></div>
+                                            <div class="cover"></div>
+                                        </div>
+                                        <div class="intro">
+                                            <div class="intro-content">
+
+                                                <h3>律师诉讼</h3>
+                                                <p>冠杰公司</p>
+                                            </div>
+                                            <div class="cover"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="case/showc105.html">
+                                        <div class="img-box">
+                                            <div class="img">
+                                                <img src="http://gz.dazhizhiqiye.com/img/1529083291.jpg" alt="侦探注册">
+                                            </div>
+                                            <div class="ck"></div>
+                                            <div class="cover"></div>
+                                        </div>
+                                        <div class="intro">
+                                            <div class="intro-content">
+
+                                                <h3>侦探注册</h3>
+                                                <p>冠杰侦探</p>
+                                            </div>
+                                            <div class="cover"></div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="case/show44c6.html">
+                                        <div class="img-box">
+                                            <div class="img">
+                                                <img src="http://gz.dazhizhiqiye.com/img/1529088207.jpg" alt="婚姻咨询师">
+                                            </div>
+                                            <div class="ck"></div>
+                                            <div class="cover"></div>
+                                        </div>
+                                        <div class="intro">
+                                            <div class="intro-content">
+
+                                                <h3>婚姻咨询师</h3>
+                                                <p>冠杰侦探</p>
+                                            </div>
+                                            <div class="cover"></div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <a onclick="location='case.php'" class="wider-more" href="case.html">MORE</a>
+                            </ul>
+                            <div class="rbslider-pagination"></div>
+                        </div>
+                        <div class="navigation case">
+                            <a class="prev"></a>
+                            <a class="next"></a>
+                        </div>
+                       
+                        <div onclick="location='case/case.html'" class="rbslider-item-list-more">MORE</div>
+                    </div>
+                </div>
+            </section>
+            <section class="page page4 section swiper-slide" data-hash="page4" id="page4">
+                <div class="fp-tableCell" style="height: 296px;">
+                    <div class="section-content-container" >
+                        <hgroup class="ani" swiper-animate-effect="slideInRight">
+                            <h2></h2>
+                            <h3>客户拨通咨询热线后，业务负责人与客户亲自会面或在电话中谈清楚委托事宜,（若因客户不便出面可以选择其他方式签协议）。签定协议必须由电话确认后方可进行，以免不法分子冒充冠杰人员欺骗客户</h3>
+                        </hgroup>
+                        <div class="section-content ani" swiper-animate-effect="slideInLeft">
+                            <ul class="partner-list clearfix">
+                                <li>
+                                    <div class="con">
+                                        <div class="img">
+                                            <img alt="0514-82200998" src="http://gz.dazhizhiqiye.com/img/1529136009.jpg">
+                                        </div>
+                                        <p>13533332443</p>
+                                    </div>
+                                    <div class="ck"></div>
+                                </li>
+                                <li>
+                                    <div class="con">
+                                        <div class="img">
+                                            <img alt="0514-82200998" src="http://gz.dazhizhiqiye.com/img/1529135631.jpg">
+                                        </div>
+                                        <p>13533332443</p>
+                                    </div>
+                                    <div class="ck"></div>
+                                </li>
+                                <li>
+                                    <div class="con">
+                                        <div class="img">
+                                            <img alt="0514-82200998" src="http://gz.dazhizhiqiye.com/img/1529144668.jpg">
+                                        </div>
+                                        <p>13533332443</p>
+                                    </div>
+                                    <div class="ck"></div>
+                                </li>
+                                <li>
+                                    <div class="con">
+                                        <div class="img">
+                                            <img alt="0514-82200998" src="http://gz.dazhizhiqiye.com/img/1529136550.jpg">
+                                        </div>
+                                        <p>13533332443</p>
+                                    </div>
+                                    <div class="ck"></div>
+                                </li>
+                                <li>
+                                    <div class="con">
+                                        <div class="img">
+                                            <img alt="0514-82200998" src="http://gz.dazhizhiqiye.com/img/1529139270.png">
+                                        </div>
+                                        <p>13533332443</p>
+                                    </div>
+                                    <div class="ck"></div>
+                                </li>
+                                <li>
+                                    <div class="con">
+                                        <div class="img">
+                                            <img alt="0514-82200998" src="http://gz.dazhizhiqiye.com/img/1529138606.jpg">
+                                        </div>
+                                        <p>13533332443</p>
+                                    </div>
+                                    <div class="ck"></div>
+                                </li>
+                                <li>
+                                    <div class="con">
+                                        <div class="img">
+                                            <img alt="0514-82200998" src="http://gz.dazhizhiqiye.com/img/1529142179.png">
+                                        </div>
+                                        <p>13533332443</p>
+                                    </div>
+                                    <div class="ck"></div>
+                                </li>
+                                <li>
+                                    <div class="con">
+                                        <div class="img">
+                                            <img alt="0514-82200998" src="http://gz.dazhizhiqiye.com/img/1529138026.jpg" >
+                                        </div>
+                                        <p>13533332443</p>
+                                    </div>
+                                    <div class="ck"></div>
+                                </li>
+                                <li>
+                                    <div class="con">
+                                        <div class="img">
+                                            <img alt="0514-82200998" src="http://gz.dazhizhiqiye.com/img/1529137414.jpg" >
+                                        </div>
+                                        <p>13533332443</p>
+                                    </div>
+                                    <div class="ck"></div>
+                                </li>
+                                <li>
+                                    <div class="con">
+                                        <div class="img">
+                                            <img alt="0514-82200998" src="http://gz.dazhizhiqiye.com/img/1529144766.jpg">
+                                        </div>
+                                        <p>13533332443</p>
+                                    </div>
+                                    <div class="ck"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page section page5 white  swiper-slide" data-hash="page5"  id="page5">
+                <div class="fp-tableCell">
+                    <div class="section-content-container rbslider-item-list-container">
+                        <hgroup class="ani" swiper-animate-effect="slideInRight">
+                            <h2>我们向每一个委托人、委托公司承诺：</h2>
+                            <h3></h3>
+                        </hgroup>
+                        <div class="section-content swiper-container3 rbslider-item-list-wrapper equipment-list ani" swiper-animate-effect="slideInUp" style="overflow: hidden;">
+                            <ul class="rbslider-item-list swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <p>
+                                        <img alt="1.  不向任何人透露有关本委托的任何信息。" src="http://gz.dazhizhiqiye.com/img/1441954332.png">
+                                    </p>
+                                    <p class="text">
+                                        1. 不向任何人透露有关本委托的任何信息。
+                                        <br>2. 不与任何和本委托有关的其他第三方机构或个人直接或间接联系。
+                                        <br>3. 任何与本委托无关的公司员工不得查看有关此案件的录像、录音、照片等资料。 </p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <p>
+                                        <img alt="4.  有关此案件的录像、录音、照片等资料的刻录及保存工作，必须由经办该案件的调查组组长在公司指定办公地点且在无其他人员在场时独自完成。" src="http://gz.dazhizhiqiye.com/img/1441951089.png">
+                                    </p>
+                                    <p class="text">
+                                        4. 有关此案件的录像、录音、照片等资料的刻录及保存工作，必须由经办该案件的调查组组长在公司指定办公地点且在无其他人员在场时独自完成。
+                                        <br>5. 在未结案之前，有关此案的任何资料，必须保存在公司为经办该案件的调查组组长单独准备的加密过的指定硬盘之中。
+                                        <br> </p>
+                                </li>
+                                <li class="swiper-slide">
+                                    <p>
+                                        <img alt="6.  委托完成后，将案前客户提供给我方的所有资料返还客户，不私自保留。" src="http://gz.dazhizhiqiye.com/img/1441947891.png">
+                                    </p>
+                                    <p class="text">
+                                        6. 委托完成后，将案前客户提供给我方的所有资料返还客户，不私自保留。
+                                        <br>7. 委托完成并将取证资料（录像及照片等）全数交给客户之后，我方需于一个工作日内将该案件的所有信息消除，不私自存留且不做备份。
+                                        <br> </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navigation equipment">
+                            <a class="prev"></a>
+                            <a class="next"></a>
+                        </div>
+                        <a href="#" target="_blank" class="btn-test">测试你的网站能否自适应</a>
+                    </div>
+                </div>
+            </section>
+            <section class="page page6 section swiper-slide" data-hash="page6"  id="page6">
+                <div class="fp-tableCell" style="height: 332px;">
+                    <div class="section-content-container marketing-content">
+                        <hgroup class="ani" swiper-animate-effect="slideInRight">
+                            <h2>冠杰侦探提供服务的责任：</h2>
+                            <h3> 冠杰对案件严格实行分块、分段、分时向调查员进行任务指派，杜绝串并案的发生。防止调查员做假案、钓鱼办案、伪案、确保每一个结案扎实可靠，让客户的利益得到有效的保障。</h3>
+                        </hgroup>
+                        <div class="section-content ani" swiper-animate-effect="slideInLeft">
+                            <ul class="marketing_list clearfix">
+                                <li>
+                                    <div class="icon">
+                                        <div class="circular l"></div>
+                                        <div class="circular r"></div>
+                                        <span>
+                                            <img style="margin-top:30px" alt="" src="http://gz.dazhizhiqiye.com/img/1443703213.png">
+                                        </span>
+                                    </div>
+                                    <h4></h4>
+                                    <p class="text">
+                                        1、与客户方一起找出问题的答案。
+                                        <br>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <div class="circular l"></div>
+                                        <div class="circular r"></div>
+                                        <span>
+                                            <img style="margin-top:30px" alt="" src="http://gz.dazhizhiqiye.com/img/1443702541.png">
+                                        </span>
+                                    </div>
+                                    <h4></h4>
+                                    <p class="text">
+                                        2、向客户定期或不定期汇报调查结果，以获取及时指导和支持。
+                                        <br>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <div class="circular l"></div>
+                                        <div class="circular r"></div>
+                                        <span>
+                                            <img style="margin-top:30px" alt="" src="http://gz.dazhizhiqiye.com/img/1443707613.png">
+                                        </span>
+                                    </div>
+                                    <h4></h4>
+                                    <p class="text">
+                                        3、帮助客户方建立解决问题的流程，并确保严格标准。
+                                        <br>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <div class="circular l"></div>
+                                        <div class="circular r"></div>
+                                        <span>
+                                            <img style="margin-top:30px" alt="" src="http://gz.dazhizhiqiye.com/img/1443700279.png">
+                                        </span>
+                                    </div>
+                                    <h4></h4>
+                                    <p class="text">
+                                        4、对于施展过程中如发现问题时，及时向客户方提供一切必要的分析与支持。
+                                        <br>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <div class="circular l"></div>
+                                        <div class="circular r"></div>
+                                        <span>
+                                            <img style="margin-top:30px" alt="" src="http://gz.dazhizhiqiye.com/img/1443704543.png">
+                                        </span>
+                                    </div>
+                                    <h4></h4>
+                                    <p class="text">
+                                        5、提供外部观点和普通适用的经验，使之与客户方的需求始终保持一致。
+                                        <br>
+                                    </p>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <div class="circular l"></div>
+                                        <div class="circular r"></div>
+                                        <span>
+                                            <img style="margin-top:30px" alt="" src="http://gz.dazhizhiqiye.com/img/1443708028.png">
+                                        </span>
+                                    </div>
+                                    <h4></h4>
+                                    <p class="text">
+                                        6、确保以事实为基础，以结果为动力的工作方法。
+                                        <br>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page page7 section swiper-slide" data-hash="page7" id="page7">
+                <div class="fp-tableCell" style="height: 393px;">
+                    <ul class="home-about">
+                        <li class="">
+                            <h2></h2>
+                            <div class="con" style="margin-top:-40px;">
+                                <p>1、看侦探公司的有没有工商注册号 冠杰隶属于郑州达之志企业管理咨询有限公司经工商行政管理局批准成立的本地合法机构，在成立的多年里已成功的解决了大量的复杂案例在业界形成一定的影响力。
+                                    2、电话沟通是否专业？ 委托人在选择侦探时应该首先电话沟通，从电话咨询的过程中了解其公司的客服人员是否专业？是否本地人？收费是否合理？公司实体是否存在等方面全面衡量。 3、口无遮拦：
+                                    口无遮拦吹嘘自己经营多年的侦探公司，委托人只需简单的询问下调查的常识及方向，其谎言就不攻自破。 4、夸大吹嘘： 假侦探社经常使用肯定的语气……一定怎么怎么样，保证如何如何……肯定如此……，不一而足。他们完全不顾及被调查人和事物的内在规律及发展变化，根本不考虑自己的人员及设备的能力和运气……，这可能是对事情客观认识不足，或者就是谎言。
+                                    5、收费奇低： 低于成本运作的侦探公司如何是真侦探公司呢？故公司很快就会倒闭，而没有倒闭的就必然是骗子，是花钱不办事或者是花钱办不好事的侦探骗子。 在这里，我们要明确提出，只有高效、诚信才是冠杰侦探生存的根本，只有遵守职业道德和规范化管理才是一个本地侦探公司存活的源泉，只要每一个委托人选择好真侦探去委托才能让骗子公司彻底消失。
+                                </p>
+
+
+                            </div>
+                            <h3 class="bot">辨别真假侦探</h3>
+                        </li>
+                        <li class="">
+                            <h2></h2>
+                            <div class="con">
+                                <p>取证工作是实实在在的不像影视作品中表现得那么传奇和神秘。&nbsp; 1、 客户提供的线索一定要真实，可靠。反映的情况要客观。对于没有把握的线索和迹象要予以说明，不要凭想当然，不要把主观判断当作客观依据，也不要为压低价格而对调查事件的难度做出不客观的表述。否则会影响到整个调查工作的进度和准确度，而且任何一个取证公司如果发现客户提供情况不属实，都会从新考虑对委托、事宜进行平估。&nbsp;
+                                    2、提醒客户在做取证工作开始之前，不要对任何人提及此事（特别是与委托事宜有关的人），也不要以任何形式惊拢被调查对象，以免对日后工作生产不利影响&nbsp; 3、在客户委托之后我们将根据情况及工作的进展，合理有效的调整工作方案和部署，并希望客户予以尽可能的配合。我们将倾听客户的建议，因为客户对调查目标有较为直接的了解，但也希望客户尊重我们的建议，因为我们是专业的。&nbsp;
+                                    4、客户在日常生活中可能会发现一些问题的蛛丝马迹，但是否找调查公司可能会有许多顾虑。反复考虑也许会错失战机，自己取证也许会打草惊蛇或一无所获。你可以先打个电话咨询一下，可能会打消你的顾虑，或者我们给你出的主意会轻易解决问题，因为我们是专业的！
+                                    我们是专业的！ 我们是专业的！</p>
+
+
+                            </div>
+                            <h3 class="bot"></h3>
+                        </li>
+                        <li class="cur">
+                            <h2></h2>
+                            <div class="con">
+                                <p>　　我们的取证工作需要委托人的紧密配合，如果你要想你的猜疑得到答案，如果你想得到法律认可的证据，为使本公司在受理你的案件后工作顺利，希望你在委托我们调查之前，请您注意做到以下几点：
+                                    一、 在委托调查公司调查前不要打草惊蛇； 二、 不要轻易去跟踪你的目标调查对象,一但被发觉就会引起目标警惕，再想调查取证就很困难； 三、 不要让被调查者发现你在查看通讯记录；&nbsp;
+                                    四、 不要老打电话问调查者在那里、在干什么；（同样的原因，这样做也会惊扰被调查对像）。 五、 即使你发现可疑号码，也不要轻易打过去试探；&nbsp; 六、 不要让被调查者感觉到你已起疑心，和平时一样，你不要让被调查者觉察到你心理上的变化；
+                                    1. 你心理上的变化，很容易影响我们的受理案件后的取证工作。&nbsp; 七、 在生活上尽量做到和以前一样；&nbsp; 八、 把你发现的疑点做详细记录，以便能发现其中的规律；&nbsp;
+                                    九、 欲擒故纵，要让被调查者尽量放松，才能露出更多的破绽调查工作是实实在在的不像影视作品中表现得那么传奇和神秘。</p>
+
+
+                            </div>
+                            <h3 class="bot"></h3>
+                        </li>
+
+                    </ul>
+                    <ul class="home-about-navi">
+                        <li>关于</li>
+                        <li>愿景</li>
+                        <li>荣誉</li>
+                        <li class="bg" style="top: 64px; left: 0px;"></li>
+                    </ul>
+                    <div class="home-about-bottom">
+                        <ul class="clearfix">
+
+
+                            <li>
+                                <em>100%</em>用心服务每一个客户</li>
+                            <li>
+                                <em>98%</em>的设计一次通过验收</li>
+                            <li>
+                                <em>95%</em>以上的客户续费率</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+            <section class="page page8 section swiper-slide" data-hash="page8"  id="page8">
+                <div class="fp-tableCell" style="height: 393px;">
+                    <div class="home-contact ani" swiper-animate-effect="fadeInUp">
+                        <ul class="clearfix">
+                            <li>
+                                <p style="text-align:left; width:95%; margin:0 auto; margin-top:-20px;">
+                                    <strong style="font-size:16px; color: #F00;">特别提示:</strong>
+                                    <br> “近期网络出现大量的骗子公司，以低廉的价格骗取客户的钱财，致广大的客户雪上加霜，特别是调查行业，严重影响调查行业的声誉”
+                                    <br> 选择调查公司切记：不见面不要相信，没有驻点公司不要相信，不支持面签合同不要相信！以免遭到诈骗和勒索，如有需要来公司面议或委托他人来公司面签合同。
+                                </p>
+                                <br>
+                                <div>
+                                    <div style="line-height:20px; float:left; font-size:14px; padding-right:20px; text-align:left; margin-bottom:10px;">
+                                        <strong>深圳公司</strong>
+                                        <br> 地址:公司位于深圳市福田区嘉里建设广场3座
+                                        <br> 电话微信:
+                                        <a href="tel:13926592526">13926592526</a>
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div style="line-height:20px;  float:left; font-size:14px;padding-right:20px;text-align:left; margin-bottom:10px;" "=" "><strong>广州公司</strong><br>
+            地址:广州市天河区体育东路140-148号南方证券大厦<br>
+            电话微信:<a href="tel:13533332443 ">‭13533332443</a><br><br>
+            </div>
+            <div style="line-height:20px; float:left; font-size:14px;text-align:left;margin-bottom:10px; " "="">
+                                        <strong>郑州公司</strong>
+                                        <br> 地址:河南自贸试验区郑州片区(郑东)商务外环路6号3层302号
+                                        <br> 电话微信:
+                                        <a href="tel:0371-60385569"> 0371-60385569</a>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="swiper-pagination aaaaaa"></div>
+
+    </div>
+    <div id="panel">
+        <ul class="icons">
+            <li class="up" title="上一页"></li>
+            <li class="tel"></li>
+            <li class="wx"></li>
+            <li class="down" title="下一页"></li>
+        </ul>
+        <ul class="info">
+            <li class="tel" style="display: none;">
+                <p>咨询热线：
+                    <br>13533332443
+                    <br>
+                </p>
+            </li>
+            <li class="wx" style="display: none;">
+                <div class="img">
+                    <img src="http://gz.dazhizhiqiye.com/img/1529079891.png">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="index_cyControl" class="index_cy"></div>
+</body>
+<script src="./js/jquery.min.js"></script>
+
+
+<script src="./js/swiper.min.js"></script>
+<script src="./js/swiper.animate.min.js"></script>
+<script src="./js/resize.js"></script>
+<script src="./js/lunBo.js"></script>
+<script src="./js/index.js"></script>
+<script>
+   $("#page3 .rbslider-item-list").createLun({
+        pagination:"#page3 .rbslider-pagination"
+   })
+   $("#page5 .rbslider-item-list").createLun()
+    var mySwiper = new Swiper('.swiper-container', {
+        mousewheel: true,
+        direction: 'vertical', // 垂直切换选项
+   
+       // hashNavigation:true,
+  
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        on: {
+            init: function () {
+                swiperAnimateCache(this); //隐藏动画元素 
+                swiperAnimate(this); //初始化完成开始动画
+            },
+            slideChange:function(){
+                if(mySwiper){
+                    $("#menu li").removeClass("active");
+                    if(mySwiper.activeIndex==0){
+                        swiper2.slideTo(0, 100, true);//切换到第一个slide，速度为1秒
+                    }
+                    $($("#menu li")[mySwiper.activeIndex]).addClass('active')
+                }
+                
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+               // this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); //动画只展现一次，去除ani类名
+            }
+        }
+
+    })
+    var swiper2 = new Swiper('.swiper-container2', {
+        mousewheel: false,
+        direction: 'horizontal', // 垂直切换选项
+        loop: false, // 循环模式选项
+       // autoplay:true,
+        forceToAxis: true,
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination2',
+        },
+        on: {
+            init: function () {
+                swiperAnimateCache(this); //隐藏动画元素 
+                swiperAnimate(this); //初始化完成开始动画
+            },
+           
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                //this.slides.eq(this.activeIndex).find('.ani').removeClass('ani'); 动画只展现一次，去除ani类名
+            }
+        }
+    })
+    $(document).ready(function () {
+        var phone=false;
+        var heng=null;
+        $("#panel .down").click(function(){
+            mySwiper.slideNext();
+           
+        })
+        $("#panel .up").click(function(){
+            mySwiper.slidePrev();
+        })
+        $("#menu li").click(function(){
+           
+             var page=$(this).index();
+             console.log(page)
+             mySwiper.slideTo($(this).index(), 1000, true);//切换到第一个slide，速度为1秒
+        })
+        $(".movedown").click(function(){mySwiper.slideNext();})
+        window.onload=function(){
+            heng=setInterval(function () {
+                playCard()
+            }, 2000)
+        }
+        window.onresize=function(e){
+            if($(this).width()<700){
+                clearInterval(heng)
+                phone=true;
+                setInterval(function () {
+                    playCard()
+            }, 2000)
+            }else{
+                phone=false;
+                heng=setInterval(function () {
+                playCard();
+              //  $("#page3 .rbslider-item-list").createLun()
+            }, 2000)
+            }
+            
+        }
+        function playCard(currentIndex) {
+            var height = $("#page7 .home-about-navi li:nth(1)").outerHeight();
+            var width=$("#page7 .home-about-navi li:nth(1)").outerWidth();
+            if (currentIndex == null || currentIndex == undefined || currentIndex == NaN) {
+                if(phone){
+                    $("#page7 .home-about-navi .bg").css("top","0px")
+                    currentIndex = parseInt($("#page7 .home-about-navi .bg").css("left")) / width >= $("#page7 .home-about-navi li:not('.bg')").length - 1 ? 0 : parseInt($("#page7 .home-about-navi .bg").css("left")) / width + 1;
+                    $("#page7 .home-about-navi .bg").css("left", currentIndex * width + "px")
+                }else{
+                    currentIndex = parseInt($("#page7 .home-about-navi .bg").css("top")) / height >= $("#page7 .home-about-navi li:not('.bg')").length - 1 ? 0 : parseInt($("#page7 .home-about-navi .bg").css("top")) / height + 1;
+                    $("#page7 .home-about-navi .bg").css("top", currentIndex * height + "px")
+                }
+               
+            }
+            $("#page7 .home-about li").removeClass("cur")
+           
+            $("#page7 .home-about li:nth(" + currentIndex + ")").addClass("cur");
+        }
+        $(".home-about-navi li").mouseover(function () {
+            var currentIndex = $(this).index();
+            playCard(currentIndex)
+        })
+        $("#panel .tel,#panel .wx").mouseenter(function(){
+          
+            var name=$(this).attr('class');
+            var tar="."+name;
+            console.log(tar)
+            $("#panel .info").find("."+name+"").css('display','list-item')
+            $("#panel .info").addClass("hover")
+        }).mouseleave(function(){
+            var name=$(this).attr('class');
+            $("#panel .info").find("."+name+"").css('display','none')
+            $("#panel .info").removeClass("hover")
+        })
+        $("#index_cyControl").click(function(){
+            if($(this).hasClass("index_cy")){
+                $(this).attr("class","index_cy2");
+                $("#panel").css("right","-180px")
+            }else{
+                $(this).attr("class","index_cy");
+                $("#panel").css("right","0px")
+            }
+            
+        })
+    })  
+</script>
+
+
+</html>

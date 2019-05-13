@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main4282.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+</head>
+
+<body class="details-page open">
+    <div id="main-container">
+        <div class="inner-wrap">
+            <div class="case-detail">
+                <p class="caption">项目介绍</p>
+                <h1>[律师诉讼]</h1>
+                <span class="info">冠杰公司</span>
+                <div class="intro">三、选择我们律师事务所的理由： 1、优质高效：有优秀的律师团队服务；有优质的服务态度；有电子邮件、电话、传真等现代化办公工具，方便随时进行沟通。专项法律人才； 2、口碑积累：上百家公司常年法律顾问，一致...
+                </div>
+                <p class="caption">企业网站</p>
+                <div class="imgs">
+                    <p>
+                        <img alt="" src="http://gz.dazhizhiqiye.com/img/1547113170.png">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <ul class="btns">
+            <li>
+                <a class="up"></a>
+            </li>
+            <li>
+                <a class="tel" href="tel:15322023990"></a>
+                <div class="info">
+                    <p>咨询热线
+                        <br>15322023990</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sub-nav">
+        <ul class="btn">
+            <li>
+                <a href="case.html">
+                    <img src="http://gz.dazhizhiqiye.com/img/home.png">
+                    <span style="margin-left:5px" class="yc">产品案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <img src="http://gz.dazhizhiqiye.com/img/preno.png">
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <img src="http://gz.dazhizhiqiye.com/img/nextno.png">
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <aside class="main">
+        <h1>
+            <a href="../index.html">
+                <img alt="logo图片" src="http://gz.dazhizhiqiye.com/img/1530802196.png" width="100%">
+            </a>
+        </h1>
+        <div class="qrcode aside-container">
+            <img src="http://gz.dazhizhiqiye.com/img/1529079891.png">
+            <p>扫一扫微信二维码
+                <i></i>
+            </p>
+        </div>
+        <nav class="aside-container">
+            <ul>
+                <li>
+                    <a href="../index.html">网站首页</a>
+                </li>
+                <li>
+                    <a class="cur" href="case.html">产品案例</a>
+                </li>
+                <li>
+                    <a href="../news/news.html">最新资讯</a>
+                </li>
+            </ul>
+        </nav>
+
+        <footer></footer>
+    </aside>
+    <script type="text/javascript" src="../plugin/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(".sub-nav .switch").click(function () {
+            if ($('body').hasClass('open')) {
+                $(this).attr('data-icon', 9);
+                $('body').removeClass('open').addClass('close');
+            } else {
+                $(this).attr('data-icon', 8);
+                $('body').removeClass('close').addClass('open');
+            }
+
+        });
+        $(".btns .up").click(function () {
+            $("html,body").animate({ scrollTop: 0 }, 600);
+        });
+    </script>
+
+
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+</body>
+
+</html>
